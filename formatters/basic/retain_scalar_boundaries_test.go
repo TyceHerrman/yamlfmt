@@ -24,7 +24,7 @@ import (
 )
 
 func TestRetainBlockScalarSeparators(t *testing.T) {
-	for _, style := range []string{"|", "|-", "|+", ">", ">-", "|2-"} {
+	for _, style := range []string{"|", "|-", "|+", ">", ">-", ">+", "|2-", ">+2"} {
 		for _, single := range []bool{false, true} {
 			for _, scan := range []bool{false, true} {
 				for _, newline := range []string{"\n", "\r\n"} {
